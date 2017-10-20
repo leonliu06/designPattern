@@ -5,8 +5,8 @@ Director::Director(Builder* bld){
 	_bld = bld;
 }
 Director::~Director() {}
-void Director::Construct() {
-	_bld->BuildPartA("user-defined");
-	_bld->BuildPartB("user-defined");
-	_bld->BuildPartC("user-defined");
+void Director::Construct(string a, string b, string c) {
+	_bld->BuildPartA(a);
+	_bld->BuildPartB(b);
+	_bld->BuildPartC(c);
 }

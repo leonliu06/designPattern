@@ -6,7 +6,16 @@
 using namespace::std;
 
 int main(int argc, char* argv[]) {
-	Director* d = new Director(new ConcreteBuilder());
-	d->Construct();
+	Builder* b = new ConcreteBuilder();
+	Director* d = new Director(b);
+	string userProductA = "parta";
+	string userProductB = "partb";
+	string userProductC = "partc";
+	d->Construct(userProductA, userProductB, userProductC);
+
+	Product* product = b->GetProduct();
+
+	product->PrintProduct();
+
 	return 0;
 }
