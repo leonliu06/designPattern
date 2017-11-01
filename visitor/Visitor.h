@@ -24,3 +24,13 @@ public:
 protected:
 private:
 };
+
+class ConcreteVisitorB : public Visitor {
+public:
+	ConcreteVisitorB();
+	virtual ~ConcreteVisitorB();
+	virtual void VisitConcreteElementA(Element* elm);
+	virtual void VisitConcreteElementB(Element* elm);
+protected:
+private:
+};
