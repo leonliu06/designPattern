@@ -20,7 +20,7 @@ public:
 	enum{SIZE = 3};
 	ConcreteAggregate();
 	~ConcreteAggregate();
-	Iterator* CreaetIterator();
+	Iterator* CreateIterator();
 	Object GetItem(int idx);
 	int GetSize();
 protected:

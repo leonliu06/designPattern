@@ -14,7 +14,7 @@ ConcreteAggregate::ConcreteAggregate() {
 	}
 }
 ConcreteAggregate::~ConcreteAggregate() {}
-Iterator* ConcreteAggregate::CreaetIterator(){
+Iterator* ConcreteAggregate::CreateIterator(){
 	return new ConcreteIterator(this);
 }
 Object ConcreteAggregate::GetItem(int idx) {
