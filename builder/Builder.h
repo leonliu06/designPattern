@@ -1,6 +1,6 @@
+// Builder.h
 #pragma once
 
-#include "Product.h"
 #include <iostream>
 #include <string>
 
@@ -35,6 +35,6 @@ public:
 
 protected:
 private:
-	Product* _product = new Product();
+	Product* _product;
 
 };

@@ -7,7 +7,9 @@ using namespace::std;
 
 Builder::Builder() {}
 Builder::~Builder() {}
-ConcreteBuilder::ConcreteBuilder() {}
+ConcreteBuilder::ConcreteBuilder() {
+	_product = new Product();
+}
 ConcreteBuilder::~ConcreteBuilder() {}
 
 void ConcreteBuilder::BuildPartA(const string& buildPara) {
