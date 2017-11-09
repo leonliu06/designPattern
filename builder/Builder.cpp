@@ -1,6 +1,5 @@
 #include "Builder.h"
 #include "Product.h"
-#include "Component.h"
 
 #include <iostream>
 
@@ -13,23 +12,19 @@ ConcreteBuilder::~ConcreteBuilder() {}
 
 void ConcreteBuilder::BuildPartA(const string& buildPara) {
 	cout << "Step1: Build PartA..." << buildPara << endl;
-	_product->ProducePart(0, buildPara);	
+	_product->ProducePart(buildPara);	
 }
 
 void ConcreteBuilder::BuildPartB(const string& buildPara) {
 	cout << "Step2: Build PartB..." << buildPara << endl;
-	_product->ProducePart(1, buildPara);
+	_product->ProducePart(buildPara);
 }
 
 void ConcreteBuilder::BuildPartC(const string& buildPara) {
 	cout << "Step3: Build PartC..." << buildPara << endl;
-	_product->ProducePart(2, buildPara);
+	_product->ProducePart(buildPara);
 }
 
 Product* ConcreteBuilder::GetProduct() {
-	//BuildPartA("pre-defined");
-	//BuildPartB("pre-defined");
-	//BuildPartC("pre-defined");
-	//return new Product();
 	return _product;
 }

@@ -8,10 +8,8 @@ using namespace::std;
 int main(int argc, char* argv[]) {
 	Builder* b = new ConcreteBuilder();
 	Director* d = new Director(b);
-	string userProductA = "parta";
-	string userProductB = "partb";
-	string userProductC = "partc";
-	d->Construct(userProductA, userProductB, userProductC);
+
+	d->Construct("Hello ", "C++ ", "Language");
 
 	Product* product = b->GetProduct();
 

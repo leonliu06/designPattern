@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Product.h"
 #include <iostream>
 #include <string>
 
@@ -34,6 +35,6 @@ public:
 
 protected:
 private:
-	Product* _product;
+	Product* _product = new Product();
 
 };
